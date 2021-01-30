@@ -122,3 +122,24 @@ nav ul li a:hover, a.active{
     display: flex;
     justify-content: space-between;
 }
+#box{
+    width: 400px;
+    overflow: hidden;
+    background: #f1f1f1;
+    box-shadow: 0 0 20px black;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 10px;
+    text-align: center;
+    display: none;
+}
+.ok{
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: rgb(0, 255, 170);
+    border: none;
+    border-radius: 10px;
+}

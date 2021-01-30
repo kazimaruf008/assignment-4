@@ -98,7 +98,12 @@
                     </div>
                 </div>
             </div>
-            <button class="btn-style">Book Now</button>
+            <button class="btn-style" onclick="bookNow()">Book Now</button>
+            <div id="box">
+                <h1>Booking Successful</h1><br>
+                <h2>I hope you have a good journey</h2><br><br>
+                <button class="ok" onclick="ok()">ok</button>
+            </div>
         </div>
 
         <div class="booking-content">
@@ -109,6 +114,7 @@
         </div>
         </section>
         <script>
+
 
             // First Class Ticket Count
             function increase(isIncrease) {
@@ -124,6 +130,8 @@
                 firstClassTicketInput.value = firstClassTicketNewCount
                 calculator()
             }
+
+
             // Economy Ticket Count
             function ticket(isIncrease) {
                 var economyTicketInput = document.getElementById("economy-ticket-count")
@@ -138,6 +146,9 @@
                 economyTicketInput.value = economyTicketNewCount
                 calculator()
             }
+
+
+            // Total Calcolashon
             function calculator() {
                 var firstClassTicket = document.getElementById("first-class-ticket-count")
                 var firstClassTicketCost = parseInt(firstClassTicket.value)
@@ -153,7 +164,15 @@
 
                 var grandTotal = totalCost + vat;
                 document.getElementById("grand-total").innerText = grandTotal;
+            }
 
+
+            //  Successful Hidden/show 
+            function bookNow() {
+                    document.getElementById("box").style.display = "block"
+            }
+            function ok() {
+                document.getElementById("box").style.display = "none"
             }
         </script>
         <!--Thank You-->

@@ -52,7 +52,7 @@
                 <div>
                     <label for="">First Class ($150)</label>
                     <input id="first-class-ticket-count" class="inp-style inp-width " type="number" value="0">
-                    
+
                 </div>
                 <div>
                     <button class="plus-minus-btn" onclick="increase(true)">+</button>
@@ -66,7 +66,7 @@
                     <input id="economy-ticket-count" class="inp-style inp-width" type="text" value="0">
                 </div>
                 <div>
-                    <button  class="plus-minus-btn" onclick="ticket(true)">+</button>
+                    <button class="plus-minus-btn" onclick="ticket(true)">+</button>
                     <button class="plus-minus-btn" onclick="ticket(false)">-</button>
                 </div>
             </div>
@@ -159,7 +159,7 @@
                 const totalCost = firstClassTicketCost * 150 + economyTicketCost * 100;
                 document.getElementById("total-price").innerText = totalCost
 
-                var vat = totalCost* 0.1
+                var vat = totalCost * 0.1
                 document.getElementById("vat").innerText = vat
 
                 var grandTotal = totalCost + vat;
@@ -169,7 +169,7 @@
 
             //  Successful Hidden/show 
             function bookNow() {
-                    document.getElementById("box").style.display = "block"
+                document.getElementById("box").style.display = "block"
             }
             function ok() {
                 document.getElementById("box").style.display = "none"
